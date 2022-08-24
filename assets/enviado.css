@@ -1,0 +1,46 @@
+h1{
+    font-size: 2rem;
+}
+
+.enviado{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5em;
+    border: 1em double red;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 50vh;
+}
+
+.enviado img{
+    width: 10em;
+}
+
+@media only screen and (max-width: 760px) {
+    .enviado{
+        width: 100%;
+        height: auto;
+        padding:0;
+        padding-top: 1em;
+        border:1px solid red;
+    }
+    .enviado h1{
+        font-size: 1.5rem ;
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
+    .enviado h2{
+        font-size: 1.2rem;
+    }
+    
+    .enviado img{
+        width:30%
+    }
+}
