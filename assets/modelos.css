@@ -175,7 +175,7 @@ padding: 0;
     z-index: 0;
     position: absolute  ;
     display: flex;
-    background-color: #000;
+    background-color: #000000d4;
     margin: auto;
     top: 0;
     left: -500px;
@@ -292,4 +292,13 @@ padding: 0;
         width: 100%;
         grid-template-columns: repeat(2,1fr);
     }
+    .modal-galery-js{
+        width: 100%;
+        padding: 10px;
+        height: 90%;
+    }
+    .modal-galery-js img{
+        width: 100%;
+    }
+
 }
