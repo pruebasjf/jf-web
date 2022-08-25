@@ -249,6 +249,14 @@ padding: 0;
 
 
 @media only screen and (max-width: 750px) {
+   
+    .banner-video{
+        width: 100%;
+    }
+    .banner-video video{
+        width: 100%;
+    }
+    
     .modelos-descripcion{
         flex-direction: column;
         padding: 0;
