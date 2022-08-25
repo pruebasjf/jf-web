@@ -174,7 +174,7 @@ padding: 0;
 .modal-galery{
     z-index: 0;
     position: absolute  ;
-    display: flex;
+    display: none;
     background-color: #000000d4;
     margin: auto;
     top: 0;
