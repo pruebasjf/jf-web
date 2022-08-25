@@ -1,0 +1,486 @@
+*{
+    box-sizing: border-box;
+    font-family: var(--ToyotaFont);
+}
+body{
+    font-size: 1rem;
+}
+figure{
+    margin: 2px;
+}
+
+figure img{
+    border-radius: 10px;
+}
+
+article{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 90%;
+    background-color:#f6f6f6;
+}
+span{
+    display: flex;
+}
+p{
+    margin: 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+.banner-contenedor{
+  
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:90vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    background-position: center;
+    animation-name: banner;
+    animation-duration: 10s;
+    animation-delay: .5s;
+    transition: 2 ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes banner {
+    0%{
+        background-image: url(../img/posventa/banner/banner-1.webp);
+        
+    }
+    20%{
+        background-image: url(../img/posventa/banner/banner-2.webp);
+    }
+    40%{
+        background-image: url(../img/posventa/banner/banner-3.webp);
+    }
+    60%{
+        background-image: url(../img/posventa/banner/banner-4.webp);
+    }
+    80%{
+        background-image: url(../img/posventa/banner/banner-5.webp);
+    }
+    100%{
+        background-image: url(../img/posventa/banner/banner-6.webp);
+    }
+}
+
+
+
+
+.action{
+    align-content: center;
+    align-items: center;
+    width: 95%;
+    background-color: var(--WhatsAap);
+    display:flex;
+    justify-content: center;
+    opacity: 0.8;
+    justify-content: center;
+    margin:auto;
+}
+
+.action a{
+    text-decoration: none;
+    color:inherit
+}
+.action a::after{
+    content: url(../img/icon/whatsaap-logo-blanco.png);
+   
+}
+
+.action p{
+    position: relative; 
+	color: #fff;
+	font-size: 2em;
+    margin: 0;
+    padding: .5em;
+
+}
+.action p::after{
+    content: url(../img/icon/pointer.svg);
+    filter: invert(1);
+    animation-name: pointer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: .25s ease-in-out;
+    
+}
+
+@keyframes pointer {
+    0%{
+        margin-left: 15px;
+    }
+    50%{
+        margin-left: -15px;
+        opacity: 1;
+        
+    }
+    100%{
+        margin-left: 15px;
+    }
+
+}
+
+.posventa-presentacion{
+flex-direction: column;
+text-align: center;
+width: 90%
+
+}
+
+.posventa-presentacion h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: var(--colorPrimario);
+}
+
+.posventa-presentacion p{
+    width: 80%;
+    font-size: 1.8rem;
+}
+
+
+/***********GARANTIA OFICIAL TOYOTA*****************/
+
+
+
+
+.garantia-img{
+    align-items: center;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.garantia-img img{
+    width: 100%;
+    object-fit: scale-down;
+    display:flex;
+}
+
+.garantia-info{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.garantia-info h1{
+    color: var(--colorPrimario);
+    font-size: 3rem;
+}
+
+.garantia-info p{
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+/*********** INSPECCION ****************/
+
+
+.inspeccion h1{
+    color: var(--colorPrimario);
+}
+.inspeccion-info{
+    display: flex;
+    flex-direction: column;
+    width: 45%
+}
+.inspeccion-info h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.inspeccion-info p{
+    text-align: start;
+}
+
+.inspeccion-img{
+    width: 45%;
+    display: flex;
+    text-align: center;
+    padding: 1em;
+}
+
+.inspeccion-img img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/*********** PERSONAL TECNICO ALTAMENTE CAPACITADO ****************/
+.personal-tec{
+    padding: 1em;
+}
+.personal-tec-img{
+    display: flex;
+    width: 45%;
+}
+
+.personal-tec-img img {
+width: 100%;
+object-fit: scale-down;
+border-radius: 10px;
+}
+
+
+.personal-tec-info{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+   
+}
+.personal-tec-info p{
+    text-align: start;
+    
+}
+
+.personal-tec-info span{
+    text-decoration: underline;
+    display:inline
+}
+
+
+.personal-tec-info h1{
+color: var(--colorPrimario);
+text-align: center;
+font-size: 3rem;
+}
+
+
+/********* FORMULARIO DE CONTACTO *******/
+
+
+.formulario-contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 1em;
+    
+}
+
+.forms-posventa{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:1em;
+    justify-content: center;
+    background-color: var(--colorPrimario);
+    color: #fff;
+    padding: 1em;
+    align-items: center;
+    align-content: center;
+}
+.forms-posventa p{
+    font-size: 1em;
+    color: #f6f6f6;
+}
+.form-posventa-elements{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: start
+}
+.form-posventa-elements span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-posventa-elements label::after{
+    content: "*";
+    margin-left: 2px;
+}
+.form-posventa-elements input{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: none;
+    outline: none;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.form-posventa-elements select{
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+}
+
+
+.form-posventa-elements textarea{
+    width: 100%;
+    display: flex;
+    resize: vertical;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.forms-posventa button{
+    border: 1px solid #fff;
+    font-weight: 400;
+    
+}
+
+.form-posventa-elements label{
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+}
+
+.forms-posventa button:hover{
+    background-color: #fff;
+    color: var(--colorPrimario);
+
+}
+
+
+/****** MOBILE ***/
+
+
+
+
+@media only screen and (max-width: 750px) {
+    article{
+        width: 100%;
+    }
+   
+    p{
+        padding: .5em;
+        font-size: 1rem;
+    }
+    .banner-contenedor{
+        height: 20vh;
+    }
+    .posventa-presentacion{
+       width: 100%;
+        margin-bottom: 1em;
+    }
+    .posventa-presentacion p{
+        font-size: 1rem;
+        width: 100%;
+        padding: .5em;
+        text-align: start;
+   }
+
+    .garantia-oficial{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .garantia-img{
+        width: 100%;
+    }
+    .garantia-img picture{
+        margin: 0;
+        width: 100%;
+        display: flex;
+    }
+    .garantia-info{
+        flex-direction: column;
+        width: 100%;
+    }
+    .garantia-info h1{
+        font-size: 2rem;    
+    }
+    .garantia-info p{
+        font-size: 1rem;
+    }
+    .inspeccion{
+        flex-direction: column-reverse;
+        
+    }
+    .inspeccion-info{
+        width: 100%;
+    }
+    .inspeccion-img{
+        width: 100%;
+    }
+    .inspeccion-info h1{
+        font-size: 2rem;
+    }
+
+
+    .personal-tec{
+        flex-direction: column;
+    }
+
+    .personal-tec-img{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .personal-tec-info{
+        width: 100%;
+        flex-direction: column;
+    }
+    .personal-tec-info h1{
+        font-size: 2rem;
+    }
+    .action{
+        width: 100%;
+    }
+    .action p{
+        font-size: 1rem;
+    }
+    .action  a::after{
+        content: "";
+    }
+    .action p::after{
+        content: "";
+        animation: none;
+    }
+
+    
+
+   
+           
+    .forms-posventa{
+        width: 100%;
+    }
+    .form-posventa-elements{
+        flex-direction: column;
+    }
+    
+    .form-posventa-elements label{
+        margin-bottom: 2px;
+    }
+    .form-posventa-elements textarea{
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .forms-posventa button{
+        width: 100%;
+    }
+}
+
+
+
+
