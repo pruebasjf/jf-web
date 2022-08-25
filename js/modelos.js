@@ -59,11 +59,11 @@ listas.forEach((element)=>{ element.addEventListener("click", ()=>{
 
 siguiente.addEventListener("click", ()=>{
     ruta = `../img/modelos/galeria/etios/${contador}.webp`
-   // if (contador <= 9){
         contador++;
         img.src=ruta
     
     switch(contador){
+        
         case 1:
             img.src=contador++
             console.log(contador)
@@ -99,16 +99,43 @@ document.addEventListener("keyup",(event)=>{
 
 })
 
-//cerrarModal.addEventListener("keyup",()=>{
- //   let esc = event.keyCode;
-  //  if(esc = 27){
- //       modalOpen.classList.toggle("modal-galery-js")
- //       console.log("escape")
- //   }
-//
-//})
+const colorSelector = document.querySelectorAll(".colores-selector li")
 
 
-//window.addEventListener("keydown",(event)=>{
-   // console.log(event)
-//})
+colorSelector.forEach(element=>{
+    contador=1;
+    ruta = `../img/modelos/colores/etios/${contador}-Etios-Blanco-1024x768.png`
+    
+    let clase = element.className
+    console.log(clase)
+    
+    
+    element.addEventListener("click",()=>{
+        img = document.getElementById("img-color")
+        
+        switch (clase){
+            case "color-1":
+                img.src="../img/modelos/colores/etios/1-Etios-Blanco-1024x768.png";
+                break;
+            case "color-2":
+                img.src="../img/modelos/colores/etios/2-Etios-Blanco-Perlado-1024x768.png";
+                break;
+            case "color-3":
+                img.src="../img/modelos/colores/etios/Etios-Gris-Plata-1024x768.png"
+                break;
+            case "color-4":
+                img.src="../img/modelos/colores/etios/Etios-Gris-Oscuro-1024x768.png"
+                break
+            case "color-5":
+                img.src="../img/modelos/colores/etios/Etios-Negro-1024x768.png"
+                break
+            case "color-6":
+                img.src="../img/modelos/colores/etios/Etios-Rojo-1024x768.png"
+                break
+        }
+
+    })
+
+
+
+})
