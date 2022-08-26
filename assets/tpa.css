@@ -1,0 +1,879 @@
+
+*{
+ box-sizing: border-box;   
+ 
+}
+
+body{
+    font-family: "Toyota Type Semibold";
+
+}
+
+span{
+    display: block;
+}
+label{
+    display: block
+}
+
+p{
+    text-align: start;
+    color: #000;
+    margin: 0;
+
+}
+header{
+    border-bottom: 2px solid #0000003f;
+
+}
+
+.tpa-conteiner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.tpa-conteiner h2{
+    font-size: 2.5rem;
+}
+
+.tpa-banner-conteiner{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tpa-banner h2{
+    text-align: center;
+    
+
+}
+@keyframes slide {
+        0%{
+            background-image: url(../img/tpa/banner/tpa1.webp);
+        }
+        40%{
+            background-image: url(../img/tpa/banner/tpa2.webp);
+
+        }
+        80%{
+            background-image: url(../img/tpa/banner/tpa3.webp);
+        }
+        100%{
+            background-image: url(../img/tpa/banner/tpa4.webp);
+        }
+}
+
+
+
+.tpa-banner{
+  
+    background-size:contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    background-position: center;
+    transition: 1s all ease;
+    animation-name: slide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    text-align: center;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+.tpa-banner h2{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.736);
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    position: relative;
+
+}
+
+
+.tpa-yaris{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.yaris-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.yaris-info h2{
+    color: var(--colorPrimario);
+    text-align: center;
+    font-family: "Toyota Type Semibold"
+}
+.yaris-info p{
+    color: #000;
+    padding: 1em;
+    text-align: start;
+    width: 90%;
+    
+}
+.yaris-info h3{
+    background: linear-gradient(326deg, rgba(255, 255, 255, 0.482) 46%, rgb(45, 44, 45) 46%);
+    padding: 1em;
+    border-radius: 50px;
+    color: rgb(226, 225, 225);
+    font-size: 4.1rem;
+    margin: 0;
+    letter-spacing: 5px;
+    text-shadow: -2px -3px 4px  rgb(78, 76, 76);
+    border: .5px solid rgba(0, 0, 0, 0.411);
+    
+}
+.img-yaris{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+.img-yaris img{
+    width:100%;
+}
+
+/******************** PLAN ADJUDICADOS ********************
+/****************************************************/
+
+.plan-toyota{
+    align-items: flex-start;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    width: 90%;
+    background-color: rgba(183, 181, 181, 0.25);
+    
+}
+.plan-toyota  h2{
+    color: var(--colorPrimario);
+    text-align: center;
+  
+}
+
+
+
+.plan-adjudicados-info, .plan-jorge-ferro{
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.plan-adjudicados-info{
+    border-right: 1em solid rgba(0, 0, 0, 0.791);
+     
+}
+
+.plan-adjudicados-info .plan-jorge-ferro, p{
+    color: black;
+    font-size: 1.3rem;
+    width: 80%;
+    
+}
+.plan-adjudicados-info p:nth-child(4){
+    font-size: .6rem;
+}
+
+
+
+.plan-img{
+    display: flex;
+    justify-content: center;
+    width:85%;
+}
+
+.plan-img img{
+    width: 30%;
+object-fit: scale-down;
+}
+
+.plan-adjudicados-info .plan-img img{
+    margin-bottom: 1.1rem
+}
+
+.btn-plan-adjudicados-conteiner, .btn-plan-jf{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 2rem;
+    
+}
+/******************** COROLLA CROSS ********************
+/****************************************************/
+
+.corolla-cross{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.corolla-cross-img-conteiner{
+    display: flex;
+    width: 50%;
+}
+
+.corolla-cross-info{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+
+}
+.corolla-cross-info{
+    color: var(--colorPrimario);
+    flex-direction: column;
+    
+}
+
+.corolla-cross img{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+/******************** PLAN YARIS JF ********************
+/****************************************************/
+
+.plan-yaris-jorge-ferro{
+    align-items: center;;
+    display: flex;
+    background-color: rgba(183, 181, 181, 0.25);
+    justify-content: center ;
+    padding: 2em;
+    padding-bottom: 5em;
+    width: 100%;
+
+
+}
+
+.plan-yaris-jf-img{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+
+}
+.plan-yaris-jf-img img{
+    width: 50%;
+
+}
+
+.plan-yaris-jf-img img:nth-child(2){
+    width: 25%;
+
+}
+
+
+@keyframes yaris {
+    12%{
+        border: 2px solid transparent;
+        border-right: 2px solid rgb(13, 107, 13);
+    }
+    24%{
+        border: 2px solid transparent;
+        border-bottom: 2px solid green;
+    }
+    36%{
+      border: 2px solid transparent;
+        border-left: 2px solid green;
+        
+    }
+    48%{
+        border: 2px solid transparent;
+        border-top: 2px solid green;
+    }
+    60%{
+        border: 2px solid transparent;
+        border-right: 2px solid green
+    
+    }
+    80%{
+        border: 2px solid transparent;
+        border-bottom: 2px solid green;     
+    }
+    90%{
+        border: 2px solid transparent;
+        border-left: 2px solid green;
+    }
+    100%{
+        border: 2px solid transparent;
+        border-top: 2px solid green;
+    
+    
+    }
+}
+
+
+.yaris-logo{
+    background-color: #000;
+    object-fit: scale-down;
+    padding: 1em;
+    filter: invert(1);
+    border-radius: .5em;
+    animation-name: yaris;
+    display: flex;
+    transition: .35s all ease;
+    animation-duration: 5s;
+    border: 2px solid transparent;
+    animation-iteration-count: infinite;
+}
+
+
+.plan-yaris-jf-info{
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.plan-yaris-jf-info h2{
+    color: var(--colorPrimario);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.btn-plan-yaris-jf{
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.btn-plan-yaris-jf .button{
+    width: 30%;
+}
+
+.yaris-logo:hover{
+    border: 2px solid red;
+    animation: none;
+    filter: invert(0);
+    cursor: pointer;
+}
+
+/******************** PLAN HILUX ********************
+/****************************************************/
+
+.plan-hilux{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+    padding: 1em;
+}
+.plan-hilux-info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 50%;
+
+}
+.plan-hilux-info h2{
+    color: var(--colorPrimario);
+
+    text-align: center;
+    
+}
+.plan-hilux-img{
+    width: 50%;
+}
+.plan-hilux-img img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/******************** PLAN JORGE FERRO 30/70 ********************
+/***************************************************************/
+
+.plan-jf{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(183, 181, 181, 0.25);
+    width: 90%;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.plan-jf img{
+    width: 30%;
+    object-fit: scale-down;
+    display: flex;
+}
+.plan-jf-info{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.plan-jf-info h2{
+    color: var(--colorPrimario);
+    text-align: center;
+}
+
+
+/******************** Plan Coroll ********************
+/****************************************************/
+
+.plan-corolla{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.plan-corolla-img{
+    display: flex;
+    width: 50%;
+}
+
+.plan-corolla-img img{
+    display: flex;
+    width: 100%;
+    object-fit: scale-down;
+}
+.plan-corolla-info{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%  ;
+}
+ 
+.plan-corolla-info h2{
+    color: var(--colorPrimario);
+    text-align: center;
+}
+
+
+/******************** COROLLA CROSS ********************
+/****************************************************/
+
+.plan-corolla-cross{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.plan-corolla-cross-img{
+    display: flex;
+    width: 50%;
+}
+
+.plan-corolla-cross-img img {
+    
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.plan-corolla-cross-info{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+    
+}
+.plan-corolla-cross-info h2{
+    
+    color: var(--colorPrimario);
+    text-align: center;
+        
+}
+.plan-corolla-cross-info h3{
+    color: var(--colorPrimario);
+    text-align: center;
+    justify-content: center;
+    font-family: "Toyota Type Semibold",Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+.plan-corolla-cross-info span{
+    align-items: center;
+    align-content: center;
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 5px;
+    
+}
+
+
+
+
+/******************** CONTACTO ********************
+/****************************************************/
+
+.formulario-contenedor{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: var(--colorPrimario);
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+}
+.formulario-contenedor h2{
+ color: #fff;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-align: center;
+}
+.formulario-contenedor h2{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.formulario-contenedor p{
+    font-size: 1.1rem;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.forms-tpa{
+    align-items: center;
+    align-content: center;
+    background-color: var(--colorPrimario);
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:1em;
+    justify-content: center;
+    padding: 1em;
+    width:100%;
+}
+.forms-tpa p{
+    font-size: 1em;
+    text-align: center;
+}
+.form-tpa-elements{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: start
+}
+.form-tpa-elements span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-tpa-elements label{
+    margin-bottom: 10px;
+}
+
+.form-tpa-elements label::after{
+    content: "*";
+    margin-left: 2px;
+}
+.form-tpa-elements input{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: none;
+    outline: none;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.form-tpa-elements select{
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+}
+
+
+.form-tpa-elements textarea{
+    width: 100%;
+    display: flex;
+    resize: vertical;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.forms-tpa button{
+    border: 1px solid #fff;
+    font-weight: 400;
+    
+}
+
+.forms-tpa button:hover{
+    background-color: #fff;
+    color: var(--colorPrimario);
+
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    @keyframes slide {
+        0%{
+            background-image: url(../img/mobile/banner/tpa/tpa1.webp);
+        }
+        40%{
+            background-image: url(../img/mobile/banner/tpa/tpa2.webp);
+        }
+        80%{
+            background-image: url(../img/mobile/banner/tpa/tpa3.webp);
+        }
+        100%{
+            background-image: url(../img/mobile/banner/tpa/tpa4.webp);
+        }
+    }
+    .tpa-banner-conteiner{
+    height:40vh;
+    }
+   .tpa-banner h2{
+    display: flex;
+    font-family: var(--ToyotaFont);
+    text-align: center;
+    justify-content: center;
+    position: static;
+    padding: .2rem;
+    bottom: 1em;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    border-radius: 0;
+    width: 100%;
+   }
+   
+    h2{
+        font-size: 2rem;
+    }
+    p{
+       padding: 1em;
+        font-size: 1rem;
+    }
+    .button{
+        margin-bottom: 1em;
+    }
+        .tpa-yaris{
+            flex-direction: column-reverse;
+            
+        }
+        .yaris-info{
+            width: 100%;
+            padding: 1rem;
+        }
+        .yaris-info p{
+            width: 100%;
+            padding: 0;
+            font-size: 1rem;
+        }.yaris-info h3{
+            
+            padding: 1rem;
+        }
+        .yaris-info button{
+            width: 100%;
+        }
+        
+        .plan-toyota{
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+        .plan-toyota p{
+            width: 100%;
+            padding: 0;
+        }
+        .plan-adjudicados-info, .plan-jorge-ferro{
+            flex-direction: column;
+            border-right: none;
+            width: 100%;
+            padding: .5em;
+        }
+        .plan-adjudicados-info{
+            border-bottom: 1px solid red;
+        }
+        .plan-toyota img{
+            width: 100%;
+            margin:0;
+            margin-top:1em;
+        }
+        
+        .button{
+            width: 100%;
+        
+        }
+
+        .corolla-cross{
+            flex-direction: column;
+            padding: 1px;
+            width: 100%;
+        }
+        .corolla-cross-img-conteiner{
+
+            width: 100%;
+        }
+        .corolla-cross-info{
+            text-align: center;
+            width: 100%;
+        }
+        .corolla-cross-info p{
+            text-align: start;
+            padding: 1em;
+            width: 100%;
+        }
+        .plan-yaris-jorge-ferro{
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+        .plan-yaris-jf-img{
+            width: 100%;
+        }
+        .plan-yaris-jf-info{
+            width: 100%;
+        }
+        .plan-yaris-jf-info p{
+            width: 100%;
+        }
+        .btn-plan-jf{
+            width: 100%;
+        }
+
+        .plan-hilux{
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+        .plan-hilux-img{
+            width: 100%;
+        }
+        .plan-hilux-img img{
+            display: flex;
+            width: 100%;
+        }
+        .plan-hilux-info{
+            width: 100%;
+            padding: 5px;
+        }
+        .plan-hilux-info p{
+            width: 100%;
+           
+        }
+        .plan-jf{
+            width: 100%;
+            flex-direction: column;
+            padding:0;
+        }
+        .plan-jf p{
+            width: 100%;
+        }
+        .btn-plan-jf{
+            width: 100%;
+            padding: 5px;
+        }
+        .plan-corolla{
+            flex-direction: column-reverse
+         }
+        .plan-corolla-info{
+            width: 100%;
+            
+        }
+        .plan-corolla-img{
+            width: 100%;
+        }
+        .plan-corolla-info p{
+            width: 100%;
+        }
+        .plan-corolla-cross{
+            flex-direction: column;
+           
+        }
+        .button{
+            width: 80%;
+        }
+        .plan-corolla-cross-info{
+            width: 100%;
+            flex-direction: column;
+        }
+        .plan-corolla-cross-info p{
+            width: 100%;
+        }
+        .plan-corolla-cross-img{
+            width: 100%;
+        }
+        
+
+
+
+        .formulario-contenedor{
+            width: 100%;
+            border-radius: 0;
+        }
+        .forms-tpa{
+            width: 100%;
+        }
+        .form-tpa-elements{
+            flex-direction: column;
+        }
+        
+        .form-tpa-elements label{
+            margin-bottom: 2px;
+        }
+        .formulario-contenedor p{
+            width: 100%;
+        }
+        .form-tpa-elements textarea{
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+}

@@ -1,0 +1,632 @@
+body{
+    --colorKinto: #00708d;
+    --colorKintoClaro: #59a2b5;
+    --colorKintoColorParrafo: #38434b;
+    --colorGrisKinto6: #ebeced;
+    font-size: 1rem;
+    font-family: var(--ToyotaFont);
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.kinto .button{
+    background-color: var(--colorKinto);
+    color: #fff 
+}
+
+.kinto-principal{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.kinto-principal a{
+    color: var(--colorKinto);
+}
+
+
+
+.kinto-hero-img{
+    align-items: flex-end;
+    align-content: center;
+    background-image: url(../img/kinto/kinto-banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-shadow: 0px 5px  var(--colorKinto);
+}
+
+.kinto-contents{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+   
+    margin-bottom: 1em;
+    flex-direction: column;
+}
+.kinto-contents img{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:auto;
+    object-fit: scale-down;
+
+}
+
+.kinto-header{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+.kinto-hedear-info{
+    display: flex;
+    flex-direction: column;  
+    width: 100%;  
+ 
+}
+
+.kinto-hedear-info h2{
+    font-size: 2.5rem;
+    color: var(--colorKinto);
+    text-align: center;
+}
+
+.kinto-hedear-info h3{
+    font-size:1.4rem;
+    color: var(--colorKinto);
+    text-align: center;
+}
+
+
+
+.kinto-hedear-info p{
+    font-size: 1.2rem;
+    color: var(--colorKintoColorParrafo);
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.cards-conteiner{
+    align-items: stretch;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 25vw;
+    border: 3px solid var(--colorKinto);
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.card-img-conteiner{
+    width: 100%;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.card-img-conteiner img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.card-info{
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.card-info h2{
+    font-size: 1.5rem;
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border-bottom: 5px solid var(--colorKinto);
+    color: var(--colorKinto);
+}
+
+.card-info h3{
+    color: var(--colorKinto);
+    font-size: 1.1rem;
+    color: var(--colorKintoClaro);
+}
+
+.card-info p{
+    font-size: 1rem;
+    padding: 0;
+    hyphens: auto;
+    color: var(--colorKintoColorParrafo);
+    word-wrap: break-word;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+
+.preguntas-frecuentes{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4em;
+}
+
+.preguntas-frecuentes h2{
+    color: var(--colorKintoClaro);
+}
+
+.preguntas-frecuentes-conteiner{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10em;
+    gap: 4em;
+}
+
+.preguntas-frecuentes-conteiner label{
+    display: flex;
+    background-color: #00708f;
+    padding: 1em;
+}
+
+.item{
+    display: flex;    
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.label-item{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+    z-index: 1;
+}
+
+.label-item::after{
+    content:"\276F";
+    margin-right: 1em;
+    transition: all 0.3s;
+}
+
+.item-content p{
+    color: transparent;
+    font-size: 1rem;
+    text-align: start;
+    z-index: -10;
+    padding: 1em;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.item input{
+  opacity: 0;
+  position: absolute;
+}
+
+.item-content{
+    display: inline;
+    margin-top: -5em;
+    flex-direction: column;
+    height: 0;
+    transition: all 0.3s;
+    padding:  0 16px;
+    opacity: 0;
+}
+
+.item:checked{
+    margin-bottom: 0;
+}
+
+.item input:checked    ~ .item-content p{
+   color: var(--colorKinto);
+   padding: 1rem;
+   
+}
+
+.item input:checked + .label-item::after{
+    transform: rotate(90deg);
+    margin-right: 1em;
+}
+
+.item input:checked  ~ .item-content {
+  position: relative;
+    height: auto;
+    margin-top: 0;
+    opacity: 1;
+}
+.kinto-caracteristicas{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.kinto-option{
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto
+}
+
+.kinto-option h1{
+    color: var(--colorKinto);
+    font-size: 2.6rem;
+}
+.kinto-option h1 span{
+    display: inline;
+    color: var(--colorKintoClaro);
+}
+
+.kinto-option p{
+    color: var(--colorKintoColorParrafo);
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 5px;
+    text-align: start;
+}
+.kinto-option p a{
+    text-align: start;
+    color: var(--colorKintoClaro);
+}
+
+.kinto-caracteristicas p{
+    color: var(--colorKintoColorParrafo);
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 0;
+    text-align: start;
+}
+
+.kinto-caracteristicas-item{
+    align-content: center;
+    align-items:flex-start;
+    justify-content: center;
+    display: flex;
+    width: 15%;
+    text-align: center;
+    padding: 1em;
+}
+
+.kinto-caracteristicas-item img{
+    width: 50%;
+    object-fit: scale-down;
+    margin-bottom: 1em;
+}
+.kinto-caracteristicas-item figure{
+    margin: 1em;
+    color: var(--colorKintoColorParrafo);
+}
+
+.contacto-modal a{
+    color: rgb(230, 2, 2);
+    font-size: 1em;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 100em;
+    border: 1px solid red;
+}
+
+.contacto-modal{
+    width: 100vh;
+    opacity: 0;
+    position:fixed;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    pointer-events:none;
+    color: #fff;
+}
+
+.contacto-modal img{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.contacto-modal label, span{
+    display: block;
+}
+
+.kinto .button{
+    max-width: 30em;
+}
+
+.app{
+    align-items: center;
+    align-content:  center;
+    display: flex;
+    margin: auto;
+    margin-top: 2em;
+    width: 80%;
+    padding: 5em;
+    border-radius: 10px;
+    background-color: var(--colorKintoClaro);
+    margin-bottom: 1em;
+}
+
+.app-img-contenedor{
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    width: 40%;
+}
+
+.app-img-contenedor img{
+    display: flex;
+    margin: 0;
+    object-fit: scale-down;
+    width: 60%;
+}
+
+.app-info{
+    align-items: center;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.app-info h2{
+    color: #fff;
+    font-size: 4.4rem;
+    text-shadow: 1px 1px 1px var(--colorKinto);
+    margin-bottom: 0;
+}
+.app-info p {
+    color:#fff;
+    font-size: 1.5rem;
+}
+.app-store{
+    width: 100%;
+    display: flex;
+    gap:.5em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.app-store a img{
+    width: 10em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: -1px 2px 2px rgba(142, 139, 139, 0.713) ;
+    object-fit: cover;
+}
+
+/* MODAL CONTACTO */
+
+.modal-contents{
+    width: 100vh;
+    padding: 1em;
+    margin: auto;
+    position: relative;
+    background-color: var(--colorKintoClaro);
+    display: none;
+    border-radius: 5px;    
+}
+
+.modal-contents h2{
+    text-align: center;
+}
+
+.contacto-modal:target{
+    opacity: 1;
+    pointer-events:auto;
+    display: block;
+    width: 100vw;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.contacto-modal:target .modal-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.form-modal{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap:1em;
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+}
+
+.form-modal input{
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid var(--colorKintoColorParrafo);
+    outline: none;
+}
+
+.form-modal input:focus{
+    border: 2px solid var(--colorPrimario);
+}
+
+.form-modal textarea:focus{
+    border: 2px solid var(--colorPrimario);
+}
+
+.form-modal span{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+form .button{
+    margin-top: 1em;
+    border: 1px solid #fff;
+    min-width: 10em;
+}
+
+.form-modal textarea{
+    resize: vertical;
+    outline: none;
+}
+
+@media only screen and (max-width:750px) {
+    main{
+        width: 100%;
+        padding: 1em;
+    }
+   
+    .kinto-hero-img{
+        height: 50vh;
+        margin-bottom: .5em;
+    }
+    .kinto-principal h1{
+        font-size: 100%;
+    }
+    .kinto-header{
+        flex-direction: column;
+        width: 100%;
+    }
+    .kinto-header h2{
+        font-size: 1.7rem;
+    }
+    .kinto-contents{
+        width: 100%;
+    }
+    .kinto-contents img{
+        display: none;
+    }
+    .kinto-header img{
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+    }
+    .kinto-hedear-info p{
+        hyphens: auto;
+    }
+    .cards-conteiner{
+        width: 100%;
+
+    }
+    .card{
+        width: 100%;
+    }
+    .preguntas-frecuentes{
+        width: 100%;
+    }
+    .label-item{
+        font-size: .8rem;
+    }
+    .item{
+        width: 100%;
+    }
+    .kinto .button{
+        width: 100%
+    }
+    .app{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    .app-img-contenedor{
+        width: 100%;
+        justify-content: center;
+    }
+    .app-info{
+        width: 100%;
+        
+    }
+    .app-info h2{
+        font-size: 2.5rem;
+    }
+    .app-info p{
+        font-size: 1rem;
+    }
+
+    .app-store{
+        flex-wrap: wrap;
+    }
+
+    
+    .kinto-caracteristicas-item{
+        width: 100%;
+    }
+
+    .kinto-option{
+        width: 100%;
+    
+    }
+
+    .kinto-option p{
+        hyphens: auto;
+        font-size: 1rem;
+    }
+    .modal-contents h2{
+        margin-top: 0;
+        font-size: 1rem;      
+      }
+      .contacto-modal:target .modal-contents{
+        width: 100vw;
+      }
+    .form-modal{
+        width: 100%;
+    }
+    .form-modal label{
+        font-size: .9rem;
+    }
+    .form-modal input{
+        padding: 5px;
+    }
+    .form-modal button{
+        width: 100%;
+    }
+}
