@@ -113,10 +113,10 @@ colorSelector.forEach(element=>{
         
         switch (clase){
             case "color-1":
-                imgColor.src="../img/modelos/colores/etios/1-Etios-Blanco-1024x768.webp";
+                imgColor.src="../img/modelos/colores/etios/Etios-Blanco-1024x768.webp";
                 break;
             case "color-2":
-                imgColor.src="../img/modelos/colores/etios/2-Etios-Blanco-Perlado-1024x768.webp";
+                imgColor.src="../img/modelos/colores/etios/Etios-Blanco-Perlado-1024x768.webp";
                 break;
             case "color-3":
                 imgColor.src="../img/modelos/colores/etios/Etios-Gris-Plata-1024x768.webp"
