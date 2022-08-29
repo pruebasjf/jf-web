@@ -90,7 +90,15 @@
         <ul class="iconos">
             
             <li>
-                <a href="">
+                <a href="https://www.google.com/maps/dir/-34.5505792,-58.4482816/Toyota+Jorge+Ferro+-+Official+Dealer/@-34.5505154,-58.4530216,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x95bcb42fbc1d095d:0x572d19716eda196!2m2!1d-58.453373!2d-34.549802">
+                   <figure>
+                    <img src="../img/icon/botonera-modelos/maps.png" alt="Ponete en contacto">
+                    <figcaption>Ir al Concesionario</figcaption>
+                   </figure>
+                </a>
+            </li>
+            <li>
+                <a href="https://jorgeferro.com/kinto">
                    <figure>
                     <img src="../img/icon/botonera-modelos/kinto.png" alt="Solicitar Kinto">
                     <figcaption>Alquilalo con KINTO</figcaption>
@@ -98,26 +106,18 @@
                 </a>
             </li>
             <li>
-                <a href="https:/jorgeferro.com/kinto">
+                <a href="../planes/etios-plan.html">
                    <figure>
                     <img src="../img/icon/botonera-modelos/tpa.png" alt="Solicitar Kinto">
-                    <figcaption>Solitar Toyoya Plan de Ahorro</figcaption>
+                    <figcaption>Solitar TOYOTA Plan de Ahorro</figcaption>
                    </figure>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#contactar">
                    <figure>
                     <img src="../img/icon/botonera-modelos/contacto.png" alt="Solicitar Kinto">
                     <figcaption>Contactar</figcaption>
-                   </figure>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/dir/-34.5505792,-58.4482816/Toyota+Jorge+Ferro+-+Official+Dealer/@-34.5505154,-58.4530216,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x95bcb42fbc1d095d:0x572d19716eda196!2m2!1d-58.453373!2d-34.549802">
-                   <figure>
-                    <img src="../img/icon/botonera-modelos/maps.png" alt="Ponete en contacto">
-                    <figcaption>Ir al Concesionario</figcaption>
                    </figure>
                 </a>
             </li>
@@ -129,14 +129,7 @@
                    </figure>
                 </a>
             </li>
-            <li>
-                <a href="../modelos/fichas-tecnicas/Toyota-Etios-HB-y-SD-MY-2022-1.pdf" target="_blanck">
-                   <figure>
-                    <img src="../img/icon/botonera-modelos/td.png" alt="Descargar Ficha Tecnica">
-                    <figcaption>Ficha Tecnica</figcaption>
-                   </figure>
-                </a>
-            </li>
+            
         </ul>
 
 
@@ -313,9 +306,67 @@
             </figure></li>
         </ul>
     </section>
+    <div id="contactar" class="contactar">
+        <div class="form-modelo-contactar">
+            <a href="#">CERRAR</a>
+            <h2>Completá con tus datos y nos contactaremos con vos</h2>
+            <form class="forms-contactar" method="POST" action="../php/modelos.php" autocomplete="off">
+                <div class="form-modelos-elements">
+                <span>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+                </span>
+                <span>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingres su Apellido" required>
+                </span>
+            </div>
+            <div class="form-modelos-elements">
+                <span>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" id="ciudad" placeholder="Ingrese su Ciudad" required>
+                </span>
+        
+                <span>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Ingrese su teléfono" required>
+                </span>
+            </div>
+            <div class="form-modelos-elements">
+        
+                <span>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su Email" required>
+                </span>
+                <span>
+                    
+                    <select name="planes" id="planes">
+                        <option id="planes" value="Plan Yaris">Plan Yaris</option>
+                    </select>
+               <label for="pago">Forma de pago</label>
+                <select id="pago" name="pago">
+                    <option value="">elija una opción</option>
+                    <option value="contaco">Contado</option>
+                    <option value="financiado">Financiado</option>
+                </select>
+                </span>
+                
+            </div>
+            <div class="form-modelos-elements">
+        
+            <span>
+                <label for="mensaje">Dejanos tu consulta!</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+            </span>
+        </div>
+        <p>* Los campos son obligatorios</p>
+         <button id="modelos-contactar">ENVIAR</button>
+            </form>
 
-
+        </div>
+    </div>
 </main>
+
 <footer>
     <section class="footer-contact">
         <div class="footer-rrss">
