@@ -1,0 +1,449 @@
+
+/****************************** INSTITUCIONAL ************************************
+***************************************************************************/
+.institucional{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.quienes-somos, .certificaciones{
+    width: 90%;
+    
+}
+
+
+@keyframes institucional {
+    0%{
+        background-image: url(../img/banner/institucional/1.webp);
+    }
+    20%{
+        background-image: url(../img/banner/institucional/2.webp)
+    }
+    40%{
+    background-image: url(../img/banner/institucional/3.webp);
+    }
+    60%{
+        background-image: url(../img/banner/institucional/4.webp);
+    }
+    80%{
+        background-image: url(../img/banner/institucional/5.webp);
+    }
+    100%{
+        background-image: url(../img/banner/institucional/6.webp);
+    }
+}
+
+.i-hero-image{
+    width: 90vw;
+    height: 70vh;
+    background-color:#eeeeee;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    transition-delay: 10s;
+    transition: all  .25s ease;
+    animation-name: institucional;
+    animation-duration: 10s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+
+
+}
+.inst-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    top: -10em;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.053);
+}
+.quienes-somos h2{
+    color: #FFFFFF;
+    position:relative;
+    text-align: center;
+    background-color: rgba(82, 77, 77, 0.76);
+    margin: 0;
+    font-size: 4vh;
+    top: -5em;
+    width: 100%;
+    font-family: "Toyota Type Semibold";
+    padding: 2em;
+}
+.quienes-somos h3{
+    color: var(--colorPrimario);
+    font-family: "Toyota Type Semibold";
+}
+.inst-info h1{
+    font-size: 4rem;
+    text-align: center;
+    align-items: center;
+    align-content: center  ;
+    color:var(--colorPrimario);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 1em;
+    padding-top: 0;
+    width: 100%;
+    margin-top: 0;
+}
+.inst-info h1 span{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+   justify-content: center;
+   padding-top: .5em;
+   font-family: "Toyota Type Semibold"
+}
+
+
+.quienes-somos p{
+    color: #000;
+    font-size: 2vh;
+    display: flex;
+    padding: 1em;
+    width: 70%;
+    text-align: start;
+    font-family: "Toyota Type Semibold"
+}
+
+.quienes-somos ul li {
+    list-style-type: circle;
+}
+.inst-qs-items{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+
+.lineamientos h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    font-family: "Toyota Type Semibold";
+    padding: 0;
+    top:0;
+    background-color: transparent   ;
+    color: var(--colorPrimario);
+}
+
+.lineamientos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color:     rgba(0, 0, 0, 0.019);
+    padding: 1em;
+    padding-bottom: 0;
+    margin-top: -5em;
+    margin-bottom: 1em;
+}
+.lineamientos li{
+    padding: .5em;
+    font-size: 1.2rem;
+}
+
+.lineamientos .ul-mision :nth-child(1){
+    list-style-type: square;
+    }
+
+    .lineamientos .ul-mision-2 :nth-child(1){
+        list-style-type: square;
+        }
+.certificaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.certificaciones h2{
+    color: #FFFFFF;
+    text-align: center;
+    background: linear-gradient(94deg, rgba(200,16,33,0.9486388305322129) 14%, rgba(115,7,17,1) 49%);
+    margin: 0;
+    font-size: 3vh;
+    width: 100%;
+    padding: 2em;
+    word-spacing: 2px;
+    border-radius: 10px;
+    
+}
+
+.certificaciones p{
+    color: rgb(202, 182, 182);
+    font-size: 2vh;
+    padding: 1em;
+    width: 70%;
+    text-align: center;
+    white-space: pre-line;
+    font-family: "Toyota Type Semibold";
+
+}
+
+.certificaciones-box{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.certificaciones-hero{
+    background-color:rgba(197, 19, 19, 0.87);
+    width: 30em;
+    max-width: 30%;
+    min-height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1em;
+    
+}
+
+.certificaciones-hero::before{
+    content: "|";
+    top: -1em;
+    color:  #000;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    position:relative;
+}
+.certificaciones-hero h2{
+ color: #fff;
+ font-family: "Toyota Type Semibold";
+ padding: 1em;
+ font-size: 1.2rem;
+ background: none;
+}
+
+
+.certificaciones-hero p{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+
+
+.politica-ambiental{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+.politica-ambiental h2{
+    color: #FFFFFF;
+    text-align: center;
+    background: linear-gradient(340deg, rgba(18,121,9,1) 0%, rgba(4,27,2,1) 44%, rgba(4,99,5,1) 100%);
+    margin: 0;
+    font-size: 3vh;
+    width: 100%;
+    padding: 2em;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-family: "Toyota Type Semibold";
+   
+}
+
+
+.politica-ambiental p{
+    color: #000;
+    display: flex;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Toyota Type Semibold";
+}
+.pa-conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    width: 90%;
+    height:50%;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+
+
+ .forma{
+     width: 100%;
+    max-width: 20%;
+    height: 20%;
+    flex-direction: column;
+    border: 5px solid #026d09;
+    padding: 1em;
+    background-color: rgba(164, 228, 174, 0.121);
+}
+
+.forma p {
+    text-align: center;
+    justify-content: center;
+    padding: .5em;
+    display: inline;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    color: rgb(7, 7, 7);
+    word-break:keep-all;
+    hyphens:auto;
+}
+
+.forma span{
+    font-weight: bold;
+    display: inline
+} 
+
+.pa-conteiner .forma:nth-child(1){
+    border-radius: 40px 0px 40px 0px;
+    margin-bottom: 5px;
+
+}
+
+.pa-conteiner .forma:nth-child(2){    
+    border-radius: 00px 0px 40px 40px;
+
+}
+
+.pa-conteiner .forma:nth-child(3){
+    border-radius: 0px 40px 0px 40px;
+}
+.pa-conteiner .forma:nth-child(4){
+    border-radius: 0px 0px 40px 0px;
+}
+.pa-conteiner .forma:nth-child(5){
+    border-radius: 40px 40px 0px 40px;
+    max-width: 31%;
+}
+.pa-conteiner .forma:nth-child(6){
+     border-radius: 0px 40px 0px 40px;
+    
+}
+
+.pa-conteiner .forma:nth-child(7){
+    border-radius: 0px 0px 40px 0px;
+   
+}
+
+/****************************** MOBILE ************************************
+***************************************************************************/
+
+@media only screen and (max-width: 750px) {    
+    @keyframes institucional {
+        0%{
+            background-image: url(../img/mobile/banner/institucional/1.webp);
+        }
+        20%{
+            background-image: url(../img/mobile/banner/institucional/2.webp);
+        }
+        40%{
+        background-image: url(../img/mobile/banner/institucional/3.webp);
+        }
+        60%{
+            background-image: url(../img/mobile/banner/institucional/4.webp);
+        }
+        80%{
+            background-image: url(../img/mobile/banner/institucional/5.webp);
+        }
+        100%{
+            background-image: url(../img/mobile/banner/institucional/6.webp);
+        }
+    }
+    .quienes-somos p{
+        white-space:unset;
+        text-align: start;
+        width: 100%;
+        font-size: 1.3rem;
+        font-family: "Toyota Type Semibold";
+    }
+    .quienes-somos h2{
+        background-color: #222;
+        top:1px;
+        padding:.5em;
+        position: inherit;
+        font-family: "Toyota Type Semibold";
+    }
+    .i-hero-image{
+        max-height: 300px ;
+        background-size: contain;
+    }
+    .inst-info{
+        top:10px;
+        position: inherit;
+        width: 100%;
+    }
+    .inst-info h1{
+        padding: 0;
+        margin-top: 1px;
+        font-size: 2.7rem
+    }
+    .inst-info h1 span{
+        padding: 1em;
+        font-size: 1rem;
+        font-family: "Toyota Type Semibold";
+    }
+    .inst-qs-items{
+        flex-wrap: wrap;
+    }
+    .lineamientos{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid #0002;
+    }   
+    .lineamientos h2{
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+
+    .certificaciones-hero{
+        max-width: none;
+    }
+    .politica-ambiental p{
+        width: 100%;
+        text-align: start;
+        font-size: 1.2rem;
+        font-family: "Toyota Type Semibold"
+        
+    }
+    .certificaciones-hero::before{
+        display: none;
+    }
+
+    .pa-conteiner{
+        
+        width: 100%;
+    }
+    .forma, .pa-conteiner .forma:nth-child(5){
+      
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+
+}
