@@ -34,9 +34,9 @@ HTML;
 $headers = "MIME-Version: 1.0 \r\n";
 $headers.= "Content-type: text/html; charset=utf-8 \r\n";
 $headers.= "From: $nombre $telefono <$email> \r\n";
-$headers.= "To: Sitio web <prueba@prueba> \r\n";
+$headers.= "To: Sitio web <prueba@diegovarela.ar> \r\n";
 
-$rta = mail('prueba@prueba', "Mensaje web: $nombre", $body, $headers );
+$rta = mail('prueba@diegovare.ar', "Mensaje web: $nombre", $body, $headers );
 
 
 header("Location: ../enviado.html" );
