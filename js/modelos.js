@@ -64,9 +64,7 @@ listas.forEach((element)=>{ element.addEventListener("click", ()=>{
 
 const siguiente = document.getElementById("btn-galeria");
 
-
 siguiente.addEventListener("click", ()=>{
-  
    contador++
     let ruta = `../img/modelos/galeria/${modelo}/${contador}.webp`
     imgGaleria.src=ruta
@@ -82,11 +80,8 @@ siguiente.addEventListener("click", ()=>{
             contador=1
             imgGaleria.src=`../img/modelos/galeria/${modelo}/${contador}.webp`;
 
-        }
-
-    
+        }    
 })
-
 
 
 cerrarModal.addEventListener("click",()=>{
@@ -94,35 +89,24 @@ cerrarModal.addEventListener("click",()=>{
 })
 
 
-
-
 document.addEventListener("keyup",(event)=>{
     let esc = event.code;
 
     if(modalOpen.classList.className = "modal-galery-js"){
         modalOpen.classList.remove("modal-galery-js")
-
     }else{
         return
     }
-
-  
-
 })
 
 const colorSelector = document.querySelectorAll(".colores-selector li")
 
 
 colorSelector.forEach(element=>{
-    
     let clase = element.className
-    
     element.addEventListener("click",()=>{
         let imgColor = document.getElementById("img-color")
-        
         let infoColor = document.getElementById("color-selector")
-      
-
         contador=1;
         switch (clase){
             case "color-1":
@@ -160,7 +144,7 @@ colorSelector.forEach(element=>{
                 break;
             case "color-9":
                 imgColor.src="../img/modelos/colores/yaris/Toyota-Yaris-Gris-Azulado-8V5-1024x724.webp"
-                infoColor.innerHTML=`Color SSeleccionado: <br> <span>GRIS AZULADO</span>`;
+                infoColor.innerHTML=`Color Seleccionado: <br> <span>GRIS AZULADO</span>`;
                 break;
             case "color-10":
                 imgColor.src="../img/modelos/colores/yaris/Toyota-Yaris-Gris-Oscuro-Metalizado-1G3-1024x724.webp"
@@ -178,13 +162,38 @@ colorSelector.forEach(element=>{
                 imgColor.src="../img/modelos/colores/yaris/Toyota-Yaris-Gris-Plata-Metalizado-1H6-1024x724.webp"
                 infoColor.innerHTML=`Color Seleccionado: <br> <span>GRIS PLATA</span>`;
                 break;
-        
+              //************************  NUEVO COROLLA  *****************************************
+            case "color-14":
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Super-Blanco-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>SUPER BLANCO</span>`;
+                break;
+            case "color-15": 
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Blanco-Perlado-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO PERLADO</span>`;
+                break;
+            case "color-16": 
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Gris-Azulado-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS AZULADO</span>`;
+                break;
+            case "color-17": 
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Gris-Oscuro-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO METALIZADO</span>`;
+                break;
+            case "color-18": 
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Negro-Mica-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break
+            case "color-19": 
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Rojo-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>ROJO</span>`;
+                break
+            case "color-20": 
+                imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Gris-Plata-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS PLATA</span>`;
+                break
+                
         }
-
     })
-
-
-
 })
 
 
