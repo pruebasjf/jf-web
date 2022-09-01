@@ -177,8 +177,7 @@ a {
 }
 
 .equipamiento li p {
-  font-size: .9rem;
-  text-align: start;
+  font-size: 1rem;
 }
 
 .galeria {
@@ -683,10 +682,6 @@ a {
   }
   .form-contenedor {
     width: 90%;
-    top: 0;
-    bottom:0;
-    height: 100%;
-
   }
   .form-contenedor h2 {
     font-size: 1.1rem;
