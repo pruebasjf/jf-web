@@ -177,7 +177,8 @@ a {
 }
 
 .equipamiento li p {
-  font-size: 1rem;
+  font-size: .9rem;
+  text-align: start;
 }
 
 .galeria {
@@ -635,7 +636,9 @@ a {
   .equipamiento li p{
     padding: 0;
   }
-
+  .equipamiento img:hover {
+    transform: none
+  }
   .galeria {
     padding: 10px;
     width: 100%;
