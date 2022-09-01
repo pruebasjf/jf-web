@@ -126,7 +126,7 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 .equipamiento h2 {
@@ -146,7 +146,7 @@ a {
   justify-content: center;
   margin: auto;
   padding: 1em;
-  width: 95%;
+  width: 90%;
 }
 
 .equipamiento ul li {
@@ -160,7 +160,7 @@ a {
   margin-bottom: 1em;
   max-height: 20em;
   padding: 1em;
-  width: 20em;
+  width: 30%
 }
 
 .equipamiento img {
@@ -263,7 +263,6 @@ a {
   background-color: #fff;
   color: #000;
   display: flex;
-  font-size: 2rem;
   height: 1rem;
   justify-content: center;
   margin-bottom: 1em;
@@ -279,21 +278,24 @@ a {
   justify-content: center;
   left: auto;
   margin: auto;
+  top: 0;
+  bottom: 0;
   opacity: 1;
   padding: 1em;
   position: fixed;
   transition: 0.45s all ease;
-  width: 80vw;
+  width: 70%;
 }
 
 .modal-galery-js img {
   align-content: center;
   align-items: center;
-  border: 1px solid red;
+  border-radius: 5px;
   justify-content: center;
   margin: auto;
   object-fit: contain;
-  width: 100%;
+  width: 90%;
+  border: 1px solid white;
 }
 
 .colores-disponible {
@@ -624,6 +626,14 @@ a {
   }
   .equipamiento ul {
     width: 100%;
+  }
+  .equipamiento ul li{
+    width: 100%;
+    flex-direction: row;
+   
+  }
+  .equipamiento li p{
+    padding: 0;
   }
 
   .galeria {
