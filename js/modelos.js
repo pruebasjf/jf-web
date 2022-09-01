@@ -191,6 +191,36 @@ colorSelector.forEach(element=>{
                 imgColor.src="../img/modelos/colores/nuevo-corolla/Toyota-Corolla-Gris-Plata-1024x768.webp"
                 infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS PLATA</span>`;
                 break
+            //************************  COROLLA CROSS  *****************************************
+            case "color-21": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-SUPER-WHITE_L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO</span>`;
+                break;
+            case "color-22": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-WHITE-PEARL-L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO PERLADO</span>`;
+                break;
+            case "color-23": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-SILVER-L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>PLATEADO</span>`;
+                break;
+            case "color-24": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-DARK-GREY-L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO</span>`;
+                break;  
+            case "color-25": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-BLACK-L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break;   
+            case "color-26": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-RED-L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>ROJO</span>`;
+                break; 
+            case "color-27": 
+                imgColor.src="../img/modelos/colores/corolla-cross/SEG-METALLIC-BLUE-L-1024x724.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>AZUL METALICO</span>`;
+                break;  
+                        
                 
         }
     })
