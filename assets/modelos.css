@@ -683,6 +683,9 @@ a {
   }
   .form-contenedor {
     width: 90%;
+    top: 0;
+    bottom:0;
+    
   }
   .form-contenedor h2 {
     font-size: 1.1rem;
