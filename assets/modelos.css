@@ -384,16 +384,26 @@ a {
 #color-9{
   background-color: #597388;
 }
-#color-27{
+#color-27, #color-35{
   background-color: #0000ff;
 }
 
+#color-32{
 
-
+  background-color: #9eacb5
+}
 
 #color-13{ /* COROLLA CROSS */
   background-color: #DDDEDD;
 }
+
+#color-36{
+  background-color: rgb(241, 111, 48);
+}
+#color-45{ /* sw4 */
+  background-color: #7e5033;
+}
+
 
 #color-selector {
   transition: 1s all ease;
@@ -460,17 +470,18 @@ a {
 
 .contactar {
   align-items: center;
-  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  overflow-y: scroll;
   left: -500em;
   margin: auto;
-  position: absolute;
+  bottom: 0;
   right: 0;
   top: 0;
   transition: 0.25s ease-in;
   width: 100%;
+  opacity: 0;
+  position:absolute;
 }
 
 .contactar:target {
@@ -491,6 +502,7 @@ a {
 }
 .form-contenedor h2 {
   text-align: center;
+  margin: 1px;
 }
 
 .forms-contactar {
@@ -509,6 +521,7 @@ a {
 .form-contenedor p {
   color: #fff;
   font-size: 1em;
+  margin: 0;
 }
 
 .contactar a {
@@ -530,6 +543,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
 }
 
 .form-modelos-elements label {
@@ -562,7 +576,7 @@ a {
   border: none;
   display: flex;
   outline: none;
-  padding: 10px;
+  
   resize: vertical;
   width: 100%;
 }

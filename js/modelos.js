@@ -220,8 +220,91 @@ colorSelector.forEach(element=>{
                 imgColor.src="../img/modelos/colores/corolla-cross/SEG-METALLIC-BLUE-L-1024x724.webp"
                 infoColor.innerHTML=`Color Seleccionado: <br><span>AZUL METALICO</span>`;
                 break;  
-                        
-                
+             //************************  C-HR  *****************************************
+             case "color-28": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-blanco.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO</span>`;
+                break;  
+            case "color-29": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-blanco-perlado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO PERLADO</span>`;
+                break;
+            case "color-30": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-gris-plata-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS PLATA METALIZADO</span>`;
+                break; 
+            case "color-31": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-Gris-oscuro-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO METALIZADO</span>`;
+                break;
+            case "color-32": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-gris-azulado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS AZULADO</span>`;
+                break; 
+            case "color-33": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-rojo.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>ROJO</span>`;
+                break;
+            case "color-34": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-negro.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break;
+            case "color-35": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-azul-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>AZUL METALIZADO</span>`;
+                break;
+            case "color-36": 
+                imgColor.src="../img/modelos/colores/c-hr/c-hr-naranja.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NARANJA</span>`;
+                break;
+    //************************  HILUX  *****************************************
+            case "color-37": 
+                imgColor.src="../img/modelos/colores/hilux/Toyota-Hilux-2022-Super-Blanco-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO</span>`;
+                break;
+            case "color-38": 
+                imgColor.src="../img/modelos/colores/hilux/Toyota-Hilux-2022-Blanco-Perlado-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO PERLADO</span>`;
+                break;
+            case "color-39": 
+                imgColor.src="../img/modelos/colores/hilux/Toyota-Hilux-2022-Gris-Plata-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS PLATA</span>`;
+                break;
+            case "color-40": 
+                imgColor.src="../img/modelos/colores/hilux/Toyota-Hilux-2022-Gris-Oscuro-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO</span>`;
+                break;
+            case "color-41": 
+                imgColor.src="../img/modelos/colores/hilux/Toyota-Hilux-2022-Negro-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break;
+            case "color-42": 
+                imgColor.src="../img/modelos/colores/hilux/Toyota-Hilux-2022-Rojo-1024x768.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>ROJO</span>`;
+                break;
+            //************************  SW4  *****************************************
+            case "color-43": 
+                imgColor.src="../img/modelos/colores/sw4/sw4-blanco.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO</span>`;
+                break;
+            case "color-44": 
+                imgColor.src="../img/modelos/colores/sw4/sw4-plata-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>PLATA METALIZADO</span>`;
+                break;
+            case "color-45": 
+                imgColor.src="../img/modelos/colores/sw4/sw4-marron-metalico.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>MARRON METALIZADO</span>`;
+                break;
+            case "color-46": 
+                imgColor.src="../img/modelos/colores/sw4/sw4-gris-oscuro-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO METALIZADO</span>`;
+                break;
+            case "color-47": 
+                imgColor.src="../img/modelos/colores/sw4/sw4-negro.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break;
+
+
         }
     })
 })
