@@ -117,6 +117,12 @@ a {
   font-size: 3rem;
 }
 
+.modelo-info h2{
+  font-size: 1.9rem;
+  margin: 0;
+  color: var(--colorPrimario)
+}
+
 .modelo-info p {
   font-size: 1.4rem;
   text-align: start;
@@ -203,7 +209,7 @@ a {
 }
 
 .galeria ul li {
-  border: 1px solid red;
+  border: .5px solid red;
   display: grid;
   width: 100%;
 }
@@ -348,8 +354,8 @@ a {
   background-color: #000;
   border: 0.5px solid #6c6d71;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 
 .colores-contenedor ul li:active {
@@ -384,12 +390,11 @@ a {
 #color-9{
   background-color: #597388;
 }
-#color-27, #color-35{
+#color-27, #color-35, #color-52{
   background-color: #0000ff;
 }
 
 #color-32{
-
   background-color: #9eacb5
 }
 
@@ -404,6 +409,14 @@ a {
   background-color: #7e5033;
 }
 
+/* RAV4 */
+#color-54{
+  background-color: #0e232c;
+}
+
+#color-55{
+  background-color: #797f75;
+}
 
 #color-selector {
   transition: 1s all ease;
@@ -415,6 +428,10 @@ a {
   letter-spacing: 2px;
   margin-top: 10px;
   padding: 5px;
+}
+
+#color-59{
+background-color: #957025;
 }
 
 .accesorios {
@@ -627,6 +644,9 @@ a {
   .modelo-info h1 {
     font-size: 2rem;
     text-align: center;
+  }
+  .modelo-info h2{
+    font-size: 1rem;
   }
 
   .modelo-info p {

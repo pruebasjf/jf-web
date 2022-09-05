@@ -303,7 +303,68 @@ colorSelector.forEach(element=>{
                 imgColor.src="../img/modelos/colores/sw4/sw4-negro.webp"
                 infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
                 break;
-
+            //************************  RAV4  *****************************************
+            case "color-48": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-super-blanco.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>SUPER BLANCO</span>`;
+                break;
+            case "color-49": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-blanco-perlado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO PERLADO</span>`;
+                break;
+            case "color-50": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-plata-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>PLATA METALIZDO</span>`;
+                break;
+            case "color-51": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-gris-oscuro-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO</span>`;
+                break;
+            case "color-52": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-celeste-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>CELESTE METALIZADO</span>`;
+                break;
+            case "color-53": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-rojo-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>ROJO METALIZADO</span>`;
+                break;
+            case "color-54": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-azul-oscuro-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>AZUL OSCURO</span>`;
+                break;
+            case "color-55": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-urban-khaki.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>URBAN KHAKI</span>`;
+                break;
+            case "color-56": 
+                imgColor.src="../img/modelos/colores/rav4/rav4-negro.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break;
+            //************************  LCP  *****************************************
+            case "color-57": 
+                imgColor.src="../img/modelos/colores/land-cruiser-prado/blanco.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BLANCO</span>`;
+                break;
+            case "color-58": 
+                imgColor.src="../img/modelos/colores/land-cruiser-prado/gris-plata-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS PLATA METALIZADO</span>`;
+                break;
+            case "color-59": 
+                imgColor.src="../img/modelos/colores/land-cruiser-prado/bronce.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>BRONCE</span>`;
+                break;
+            case "color-60": 
+                imgColor.src="../img/modelos/colores/land-cruiser-prado/gris-oscuro-metalizado.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>GRIS OSCURO METALIZADO</span>`;
+                break;
+            case "color-61": 
+                imgColor.src="../img/modelos/colores/land-cruiser-prado/negro.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>NEGRO</span>`;
+                break;
+            case "color-62": 
+                imgColor.src="../img/modelos/colores/land-cruiser-prado/rojo.webp"
+                infoColor.innerHTML=`Color Seleccionado: <br><span>ROJO</span>`;
+                break;
 
         }
     })
