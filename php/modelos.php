@@ -6,37 +6,34 @@ if($_SERVER['REQUEST_METHOD'] != 'POST' ){
 
 
 $nombre = $_POST['nombre'];
-$localidad = $_POST['localidad'];
+$apellido = $_POST['apellido'];
+$ciudad = $_POST['ciudad'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
-$provincia = $_POST['provincia'];
-$planes = $_POST['planes'];
+$modelo = $_POST['modelo'];
 $pago = $_POST['pago'];
 
 if( empty(trim($nombre)) ) $nombre = 'anonimo';
-if( empty(trim($localidad )) ) $localidad = '';
+
 
 $body = <<<HTML
-    <h1>Contacto sobre: $planes -  desde la web</h1>
-    <p>De: $nombre</p>
+    <h1>Contacto sobre: $modelo - JORGE FERRO - WEB </h1>
+    <p>De: $nombre $apellido</p>
     <p>Telefono: $telefono</p>
-    <p>Mail: $email</p>
-    <p>Localidad: $localidad</p>
-    <p>Provincia: $provincia</p>
+    <p>Email: $email</p>
+    <p>Ciudad: $ciudad</p>
+    <p>Consulta sobre: $modelo</p>
     <p>Forma de pago: $pago</p>
     <h2>Mensaje:</h2>
     $mensaje
 HTML;
 
-
-
 $headers = "MIME-Version: 1.0 \r\n";
 $headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: $nombre $telefono <$email> \r\n";
+$headers.= "From: $nombre $apellido <$email> \r\n";
 $headers.= "To: Sitio web <prueba@diegovarela.ar> \r\n";
 
-$rta = mail('prueba@diegovare.ar', "Mensaje web: $nombre", $body, $headers );
-
+$rta = mail('prueba@diegovare.ar', "Consulta sobre: $modelo", $body, $headers );
 
 header("Location: ../enviado.html" );
