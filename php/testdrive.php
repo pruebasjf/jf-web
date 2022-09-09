@@ -11,8 +11,7 @@ $localidad = $_POST['localidad'];
 $telefono = $_POST['telefono'];
 $email = $_POST['email'];
 $modelos = $_POST['modelos'];
-$chasis = $_POST['chasis'];
-$año = $_POST['año'];
+$provincia = $_POST['provincia'];
 $mensaje = $_POST['mensaje'];
 
 
@@ -20,14 +19,13 @@ if( empty(trim($nombre)) ) $nombre = 'anonimo';
 if( empty(trim($apellido )) ) $apellido = '';
 
 $body = <<<HTML
-    <h1>Solicitud de repuestos - JORGE FERRO WEB</h1>
+    <h1>Solicitud de TEST DRIVE - JORGE FERRO WEB</h1>
     <p>De: $nombre $apellido</p>
     <p>Telefono: $telefono</p>
     <p>Mail: $email</p>
     <p>Localidad: $localidad</p>
-    <p>Modelos: $modelos</p>
-    <p>Numero de Chasis: $chasis</p>
-    <p>Año: $año</p>
+    <p>Provincia: $provincia</p>
+    <p>Modelos Seleccionado: $modelos</p>
     <h2>Mensaje:</h2>
     $mensaje
 HTML;
@@ -36,10 +34,11 @@ HTML;
 
 $headers = "MIME-Version: 1.0 \r\n";
 $headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: $nombre $telefono <$email> \r\n";
+$headers.= "From: $nombre $apellido <$email> \r\n";
 $headers.= "To: Sitio web <prueba@diegovarela.ar> \r\n";
 
-$rta = mail('prueba@diegovarela.ar', "Mensaje web: $nombre", $body, $headers );
+$rta = mail('prueba@diegovarela.ar', "Solicitud de TEST DRIVE -  $nombre", $body, $headers );
 
 
 header("Location: ../enviado.html" );
+
