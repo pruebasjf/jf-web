@@ -127,6 +127,7 @@ color: var(--colorPrimario)
     transition: .35s ease;
     z-index: 99999;
     visibility: hidden;
+    overflow: scroll;
 
 }
 .plan-contact-modal:target{
