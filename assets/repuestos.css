@@ -1,0 +1,162 @@
+body{
+    text-align: 1rem;
+}
+
+.repuestosOriginales{
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/banner/repuestos-banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.repuestosOriginales h1{
+    background-color: rgba(206, 206, 206, 0.749);
+    border-radius: 5px;
+    color: var(--colorPrimario);
+    font-size: 4rem;
+    margin-top: 0;
+    padding: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px 2px #f9f9f9fc;
+    
+}
+.formulario-contenedor  h2, h3{
+    color: var(--colorPrimario);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.formulario-contenedor h3{
+    margin-bottom: 2em;
+}
+
+   
+.formulario-contenedor{
+    align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+    width: 100%;
+    
+}
+
+.forms-repuestos{
+    align-content: center;
+    align-items: center;
+    background-color: var(--colorPrimario);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1em;
+    justify-content: center;
+    padding: 1em;
+    width:50%;
+}
+.forms-repuestos p{
+    font-size: 1em;
+}
+.form-repuestos-elements{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    justify-content: start;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 90%
+}
+.form-repuestos-elements span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-repuestos-elements label{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-repuestos-elements label::after{
+    content: "*";
+    margin-left: 2px;
+}
+.form-repuestos-elements input{
+    border: none;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    max-width: 100%;
+    outline: none;
+    padding: 10px;
+}
+
+.form-repuestos-elements select{
+    display: flex;
+    max-width: 100%;
+    padding: 10px;
+}
+
+
+.form-repuestos-elements textarea{
+    border: none;
+    display: flex;
+    outline: none;
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+}
+
+.forms-repuestos button{
+    border: 1px solid #fff;
+    font-weight: 400;
+    
+}
+
+.forms-repuestos button:hover{
+    background-color: #fff;
+    color: var(--colorPrimario);
+
+}
+
+#error{
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .repuestosOriginales{
+        background-image: url(../img/mobile/banner/repuestos-banner.webp);
+        background-size: contain;
+        max-height: 320px;
+        width: 100%;
+    }
+    .repuestosOriginales h1{
+        font-size: 2rem;
+        padding:1rem;
+    }
+
+
+    .forms-repuestos{
+        width: 100%;
+    }
+    .form-repuestos-elements{
+        flex-direction: column;
+    }
+    
+    .form-repuestos-elements label{
+        margin-bottom: 2px;
+    }
+    .form-repuestos-elements textarea{
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+}

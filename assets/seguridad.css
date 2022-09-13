@@ -1,0 +1,85 @@
+
+.seguridad-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPrimario);
+
+}
+
+.seguridad-header h2{
+    font-size: 4rem;
+    color: #fff;
+}
+.seguridad-header p{
+    color: #fff;
+    font-size: 1rem;
+   margin-top: 0;
+    padding: 0;
+}
+
+.seguridad-description{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.seguridad-description h2{
+    font-size: 1.5rem;
+}
+.seguridad-description ul li{
+    list-style-type:disc;
+}
+.seguridad-description h4{
+    color: #000;
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+}
+.seguridad-description img{
+    margin-top: 1em;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.toyota-y-vos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.toyota-y-vos h2{ 
+    color: var(--colorPrimario);
+}
+.toyota-y-vos p{
+    color: #000;
+    font-size: 1rem;
+    margin:0;
+    text-align: start;
+}
+
+@media only screen and (max-width:750px) {
+    .seguridad-description h2{
+        font-size: 1.1rem;
+    }
+    .seguridad-description{
+        align-items: flex-start;
+    }
+    .seguridad-description .button{
+        width: 100%;
+     
+    }
+    .seguridad-description h3{
+        text-align: start;
+        margin: 0;
+    }
+    .toyota-y-vos{
+        width: 100%;
+    }
+}
