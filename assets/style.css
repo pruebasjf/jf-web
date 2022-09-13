@@ -1111,9 +1111,11 @@ label{
         left: -100%;
         position: fixed;
         text-align: center;
-        top: 80px;
+        top: 100px;
         transition: all .5s;
         width: 100%;
+        overflow-y: scroll;
+        margin-bottom: 1em;
         z-index: 1;
     }
 
@@ -1191,7 +1193,7 @@ label{
     .usados-menu:hover{ 
         align-content: flex-end;
         align-items: flex-start;
-        background-color: inherit;
+        background-color:#212529;
         display:flex;
         justify-content: flex-start;
         
@@ -1494,7 +1496,7 @@ label{
         
     }
     .modelos-plan:hover ul{
-        background-color: inherit;
+        background-color: #212529;
         margin: 0;
         padding: 0;
         
