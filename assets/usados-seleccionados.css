@@ -1,0 +1,263 @@
+.titulo-usados h2{
+    background-color: var(--colorPrimario);
+    padding: 1em;
+    color: #fff;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.usados-contenedor{
+display: flex;
+background-color: rgb(232, 232, 232);
+width: 80%;
+margin: auto;
+align-items: center;
+justify-content: center;
+align-content: center;
+margin-bottom: 1em;
+}
+
+.usados-lista-contenedor {
+    display: flex;
+    width: 80%;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.usados-lista-contenedor li{
+ display: flex;
+ width: 15em;
+ position: relative;
+ text-align: center;
+ border: 1px solid rgb(194, 185, 185);
+ background-color: #fff;
+transition:  .35s ease-in;
+margin-bottom: 1em;
+}
+
+.usados-img-conteiner{
+    display:flex;
+    width: 100%;
+    object-fit: scale-down;
+    justify-content: center;
+
+}
+.usados-lista-contenedor a{
+    width: 100%;
+}
+.usados-img-conteiner img{
+    width: 100%;
+    margin-top: 2em;
+}
+.vendido{
+   background-color: rgb(4, 96, 72);;
+   position: relative;
+   width: 100%;
+   margin: 0;
+   margin-top: 5px;
+   border: 1px solid #fff;
+}
+
+.usados-info-contenedor{
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.usados-info-contenedor h2{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #000;
+}
+.usados-info-contenedor h3{
+    
+    color: #000;
+}
+.usados-info-contenedor h3::first-letter{
+    text-transform: uppercase;
+    
+}
+
+.usados-info-contenedor h4{
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.usados-lista-contenedor li:hover{
+    background-color:  rgb(232, 232, 232);
+}
+.modelos-usados{
+    display: flex;
+    justify-content: center ;
+    width: 50%;
+    margin:auto;
+    flex-direction: column;
+    align-items: center;
+}
+.modelos-usados h2{
+    text-align: center;
+    font-size: 3em;
+}
+.modelos-usados img{
+    object-fit: scale-down;
+    width: 80%;
+
+}
+.modelos-usados-descripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+
+}
+.modelos-usados-descripcion p{
+    color: #000;
+    font-size: 1rem;
+    text-align: start;
+    margin: 0;
+    padding: 5px;
+}
+
+.usado-estado h3{
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--colorPrimario);
+    padding: 1em;
+}
+.usados-galeria{
+    width: 95%;
+    display: flex;
+
+}
+.usados-galeria ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.usados-galeria ul li img{
+    object-fit: scale-down;
+    padding: 0;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+}
+
+.usados-pie{
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.usados-pie p{
+    color: #000;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+     .usados-contenedor{
+        width: 100%;
+     }
+
+     .usados-lista-contenedor{
+        width: 100%;
+        padding: 0;
+        gap: 10px;
+     }
+     .usados-lista-contenedor li{
+        width: 90%;
+        margin: auto;
+     }
+     .usados-lista-contenedor a{
+        display: flex;
+        width: 100%;
+        color: #fff;
+        justify-content: center;
+     }
+     .usados-img-conteiner{
+        width: 10em;
+     }
+     .usados-img-conteiner img{
+        width: 100%;
+        object-fit: scale-down;
+     }
+     
+     .usados-info-contenedor{
+     width: 50%;
+     text-align: start;
+     }
+     .usados-info-contenedor h2{
+        font-size: .9em;
+     }
+     .usados-info-contenedor h3{
+        font-size: .7em;
+     }
+     .usados-info-contenedor h4{
+        font-size: .6em;
+     }
+     .vendido{
+        width: 100%;
+        margin-top: 10px;
+        padding: 2px;
+        border: none;
+        background-color: rgb(68, 65, 65);
+        color: rgb(255, 255, 255);
+     }
+   .modelos-usados{
+    width: 100%;
+    padding: .5em;
+   }
+   .modelos-usados h2{
+    font-size: 2rem;
+   }
+   .modelos-usados img{
+    width: 100%;
+   }
+   .usados-galeria{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   .usados-galeria ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    gap: 10px;
+   }
+   .usados-galeria ul li{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 30%;
+
+
+   }
+   .usados-galeria ul li img{
+    width:100%;
+   }
+   .usados-pie p{
+    font-size: 1rem;
+    margin: 0;
+   }
+}
