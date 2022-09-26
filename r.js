@@ -1,1 +1,1 @@
-setTimeout(()=>{window.location.href= "https://diegovarela.ar/jf"}, 10);
+window.location.href= "https://diegovarela.ar/jf";
