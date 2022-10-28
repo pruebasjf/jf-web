@@ -1,1 +1,1 @@
-window.location.href= "https://diegovarela.ar/jf";
+window.location.href= "https://test.jorgeferro.com";
